@@ -23,11 +23,8 @@ const dayOfMonth = date.getDate();
 const year = date.getFullYear();
 const monthName = new Intl.DateTimeFormat('en-US', { month: 'long' }).format(currentDate);
  
-if(hour > 12){
-   hour-=12
-}else{
-    hour='0'+hour
-}
+const period = hour >= 12 ? 'PM' : 'AM';
+hour = hour % 12 || 12;
 if(min<10)min='0'+min
 if(sec<10)sec='0'+sec
 
