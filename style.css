@@ -72,3 +72,6 @@ align-items:center;
     flex-direction: column;
     justify-content: center;
 }
+.hand-hour{
+width:40%;
+right:50%;}
