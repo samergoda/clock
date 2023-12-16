@@ -28,7 +28,7 @@ hour = hour % 12 || 12;
 if(min<10)min='0'+min
 if(sec<10)sec='0'+sec
 
-    clock.innerHTML=`<h2>${hour} : ${min} : ${sec} ${hour>=12?'AM' : 'PM'}</h2>
+    clock.innerHTML=`<h2>${hour} : ${min} : ${sec} ${period}</h2>
     <h3>${dayName.slice(0,3)} ${dayOfMonth} ${monthName.slice(0,3)} ${year}</h3>`
 
 }
